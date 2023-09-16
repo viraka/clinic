@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kammath Dental Clinic</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!--a class="navbar-brand" href="#"></a-->
+                <img class="navbar-brand img" src="./assets/images/logo2.png" alt="logo" height="75">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link nav-item" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link nav-item" href="features.html">Treatments</a>
+                        <a class="nav-link nav-item" href="doctors.html">Doctors</a>
+                        <a class="nav-link nav-item" href="contact.html">Contact</a>
+                        <button class="btn btn-primary ap1" href="#">BOOK APPOINTMENT</button>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <main class="container">
+        <!--Carousel-->
+        <!--About-->
+        <section>
+            <!--Contact-->
+            <h2>Reach Out To Us</h2>
+            <form action="#"><!--form action="contact.php" method="POST"-->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="name" name="name" aria-describedby="nameHelp">
+                    <div id="nameHelp" class="form-text">We'll never share your name with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+        <section>
+            <h2>Our Location</h2>
+            <p><strong>Kammath Dental Clinic</strong><br>Venus Complex,<br>M. G. Road,<br>West Fort,<br>THrissur, 680004
+            </p>
+            <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+                <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+                        style="height:100%;width:100%;border:0;" frameborder="0"
+                        src="https://www.google.com/maps/embed/v1/place?q=KAMMATH+DENTAL+CLINIC,+Mahatma+Gandhi+Road,+West+Fort,+Tcr,+Thrissur,+Kerala,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div><a class="googl-ehtml" href="https://www.bootstrapskins.com/themes" id="get-map-data">premium
+                    bootstrap themes</a>
+                <style>
+                    #embed-map-canvas img {
+                        max-width: none !important;
+                        background: none !important;
+                        font-size: inherit;
+                        font-weight: inherit;
+                    }
+                </style>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <!--div class="footer-logo">
+                <img src="./assets/images/logo2.png" alt="Dental Clinic Logo">
+            </div-->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Venus Complex, <br>MG Road, West Fort,</p>
+                <p>Thrissur, 680004</p>
+                <p>Email: info@example.com</p>
+                <p onclick="">Phone: +91 9249881688</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Doctors</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--PHP-->
+
+</body>
+
+</html>

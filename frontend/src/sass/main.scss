@@ -1,0 +1,245 @@
+// Variable overrides first
+$primary: #7d0204;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+//adding custom css
+body {
+    margin: auto;
+    background-color: white;
+}
+
+header .navbar {
+    background-color: #fbae66 !important;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+header {
+    background-color: white;
+    color: #fff;
+    margin-bottom: 1rem;
+    position: sticky;
+    z-index: 999;
+    top: -10px;
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+    //box-shadow: 20px 20px 50px 10px orange inset;
+}
+
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+/*nav {
+    display: flex;
+    justify-content: space-around;
+    min-width: 0px;
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    min-width: 0px;
+    list-style: none;
+}
+*/
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+// footer {
+//     position: static;
+//     background-color: #7d0204;
+//     padding: 20px;
+//     font-family: 'Roboto', sans-serif;
+//     font-weight: bold;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     bottom: 0;
+// }
+
+// footer>p {
+//     margin: 10px 10px;
+//     color: white;
+// }
+
+.btn.ap1 {
+    border-radius: 25px;
+    margin-left: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+    transition: 0.5s ease;
+}
+
+.btn.ap1:hover {
+    transform: scale(1.05);
+}
+
+.img {
+    color: #7d0204;
+    margin-left: 0;
+}
+
+.doctors {
+    font-weight: bolder;
+}
+
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+
+#whatsapp-icon img {
+    width: 50px;
+    /* Adjust the size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+#whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+// nav item needs more spacee between them
+.nav-item {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+//blockquote element to be cenetred
+blockquote {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #7d0204;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer-contact,
+.footer-links {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.footer-contact h3,
+.footer-links h3,
+.footer-social h3 {
+    //centered content
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+
+    margin: 5px 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #33b5e5;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Font Awesome Icons */
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+    transition: color 0.3s ease;
+}
+
+.fa-facebook:hover {
+    color: #1877f2;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-instagram:hover {
+    color: #e4405f;
+}
+
+
+@media (max-width: 991px) {
+    .ap1 {
+        display: none;
+        /* Hide the button when the screen width is 768px or less */
+    }
+
+    .img {
+        height: 75px;
+    }
+}
