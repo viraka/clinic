@@ -25,10 +25,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link nav-item" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link nav-item" href="features.html">Treatments</a>
-                        <a class="nav-link nav-item" href="doctors.html">Doctors</a>
-                        <a class="nav-link nav-item" href="contact.html">Contact</a>
+                        <a class="nav-link nav-item" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link nav-item" href="./features.html">Treatments</a>
+                        <a class="nav-link nav-item" href="./doctors.html">Doctors</a>
+                        <a class="nav-link nav-item" href="./contact.html">Contact</a>
                         <button class="btn btn-primary ap1" href="#">BOOK APPOINTMENT</button>
                     </div>
                 </div>
@@ -38,56 +38,45 @@
         <!--Carousel-->
         <!--About-->
         <section>
-            <h2>Our Services</h2>
-            <p>Our clinic offers a wide range of services to meet your dental needs. We are committed to providing you
-                with the best possible care in a gentle and caring environment.</p>
-            <ul>
-                <li><strong>Cosmetic Treatment</strong>
-                    <ul>
-                        <li>Scaling and Polishing</li>
-                        <li>Teeth Whitening</li>
-                        <li>Smile designing</li>
-                    </ul>
-                </li>
-                <li><strong>Root Canal Treatment</strong>
-                    <ul>
-                        <li>Single sitting or Two sitting procedure</li>
-                        <li>Painless procedure</li>
-                        <li>Saves the tooth</li>
-                    </ul>
-                </li>
-                <li><strong>Pediatric Treatment</strong>
-                    <ul>
-                        <li>Special care</li>
-                        <li>Milk tooth extractions</li>
-                        <li>Tooth restoration</li>
-                        <li>Habit breaking appliances</li>
-                    </ul>
-                </li>
-                <li><strong>Oral Surgery</strong>
-                    <ul>
-                        <li>Surgical removal of Impacted wisdom tooth (Third molars)</li>
-                        <li>Frenectomy, Operculectomy, Apicoectomy</li>
-                        <li>Surgical removal of fibrous tissue or growth from oral mucosa</li>
-                    </ul>
-                </li>
-                <li><strong>Prosthodontic Treatment</strong>
-                    <ul>
-                        <li>Removable Partial /Full Dentures</li>
-                        <li>Crowns and Bridge</li>
-                        <li>Veneers</li>
-                        <li>Implants</li>
-                    </ul>
-                </li>
-                <li><strong>Orthodontic Treatment</strong>
-                    <ul>
-                        <li>Straight Wire Appliances for alignment and retraction of teeth</li>
-                        <li>Clear Aligners</li>
-                        <li>Tooth coloured Ceramic braces</li>
-                    </ul>
-                </li>
-            </ul>
-
+            <!--Contact-->
+            <h2>Reach Out To Us</h2>
+            <form action="#"><!--form action="contact.php" method="POST"-->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="name" name="name" aria-describedby="nameHelp">
+                    <div id="nameHelp" class="form-text">We'll never share your name with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+        <section>
+            <h2>Our Location</h2>
+            <p><strong>Kammath Dental Clinic</strong><br>Venus Complex,<br>M. G. Road,<br>West Fort,<br>THrissur, 680004
+            </p>
+            <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+                <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+                        style="height:100%;width:100%;border:0;" frameborder="0"
+                        src="https://www.google.com/maps/embed/v1/place?q=KAMMATH+DENTAL+CLINIC,+Mahatma+Gandhi+Road,+West+Fort,+Tcr,+Thrissur,+Kerala,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div><a class="googl-ehtml" href="https://www.bootstrapskins.com/themes" id="get-map-data">premium
+                    bootstrap themes</a>
+                <style>
+                    #embed-map-canvas img {
+                        max-width: none !important;
+                        background: none !important;
+                        font-size: inherit;
+                        font-weight: inherit;
+                    }
+                </style>
+            </div>
         </section>
     </main>
     <footer>
