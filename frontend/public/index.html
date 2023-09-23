@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body id="my-scrollbar">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -34,35 +34,48 @@
                 </div>
         </nav>
     </header>
-    <div id="whatsapp-icon">
-        <a href="https://api.whatsapp.com/send?phone=919249881688" target="_blank">
-            <img src="./assets/images/whatsap.png" alt="WhatsApp Icon">
-        </a>
+    <div class="icons">
+        <div id="whatsapp-icon">
+            <a href="https://api.whatsapp.com/send?phone=919249881688" target="_blank">
+                <img src="./assets/images/whatsap.png" alt="WhatsApp Icon">
+            </a>
+        </div>
+        <div id="phone-icon">
+            <a href="tel:+919249881688" target="_blank">
+                <img src="./assets/images/phone.png" alt="Phone Icon" width="50px">
+            </a>
+        </div>
     </div>
-    <div id="carouselExample" class="carousel slide">
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-item active c-item">
+                <img src="./assets/images/21.jpg" class="d-block w-100 c-img img-1" alt="first">
             </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-item c-item">
+                <img src="./assets/images/6.jpg" class="d-block w-100 c-img img-2" alt="second">
             </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-item c-item">
+                <img src="./assets/images/7.jpg" class="d-block w-100 c-img img-3" alt="third">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
     <main class="container">
         <!--About-->
-        <section>
+        <section class="about">
             <h2>About Us</h2>
             <p> Dr Rekha's Kammath Dental Clinic, located in the heart of the Thrissur City,
                 offers the best quality dental care to you at the most reasonable cost.
@@ -74,7 +87,7 @@
                 <p>" We create Confident smiles in you."</p>
             </blockquote>
         </section>
-        <section>
+        <section class="services">
             <h2>Our Services</h2>
             <p>Our clinic offers a wide range of services to meet your dental needs. We are committed to providing you
                 with the best possible care in a gentle and caring environment.</p>
@@ -141,7 +154,7 @@
         <section>
             <h2>Our Location</h2>
             <p><br>Venus complex,<br>M. G. Road,<br>West Fort,<br>Thrissur, 680004</p>
-            <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+            <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;" class="map">
                 <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
                         style="height:100%;width:100%;border:0;" frameborder="0"
                         src="https://www.google.com/maps/embed/v1/place?q=KAMMATH+DENTAL+CLINIC,+Mahatma+Gandhi+Road,+West+Fort,+Tcr,+Thrissur,+Kerala,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
