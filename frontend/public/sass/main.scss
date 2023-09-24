@@ -95,7 +95,7 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: 25% 25%;
-    filter: brightness(0.75);
+    filter: brightness(0.6);
 }
 
 .img-1 {
@@ -112,8 +112,21 @@ section {
 
 #hero-carousel {}
 
+.caption {
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    bottom: 16rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 100%;
+}
+
 .btn.ap1 {
     border-radius: 25px;
+    border: none;
+    background-image: linear-gradient(45deg, #7d0204, #d23e0e);
     margin-left: 25px;
     padding: 10px 20px;
     font-size: 1rem;
@@ -267,8 +280,9 @@ blockquote {
 
 /* Footer Styles */
 footer {
+    color: beige;
     background-color: #7d0204;
-    color: #fff;
+    background-image: linear-gradient(45deg, #7d0204, #d23e0e);
     padding: 30px 0;
     bottom: 0px;
 }
@@ -319,7 +333,7 @@ footer {
 
 .footer-links a {
     text-decoration: none;
-    color: #fff;
+    color: beige;
     transition: color 0.3s ease;
 }
 
@@ -340,7 +354,7 @@ footer {
 
 .footer-social a {
     text-decoration: none;
-    color: #fff;
+    color: beige;
     font-size: 24px;
 }
 
@@ -396,4 +410,14 @@ footer {
         transition: 0.3s ease;
     }
 
+    .caption {
+        position: absolute;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        bottom: 12rem;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        width: 100%;
+    }
 }
