@@ -11981,6 +11981,14 @@ section {
   object-position: 25% 50%;
 }
 
+.img-4 {
+  object-position: 50% 50%;
+}
+
+.img-5 {
+  object-position: 50% 95%;
+}
+
 .caption {
   position: absolute;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
