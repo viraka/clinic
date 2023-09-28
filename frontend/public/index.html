@@ -9,7 +9,9 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="./js/bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body id="my-scrollbar">
@@ -17,7 +19,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <!--a class="navbar-brand" href="#"></a-->
-                <img class="navbar-brand img" src="./assets/images/logo2.png" alt="logo" height="75">
+                <img class="navbar-brand img logo" src="./assets/images/logo3.png" alt="logo" height="65">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -52,6 +54,8 @@
                 aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active c-item">
@@ -75,6 +79,20 @@
                     <p>Call for placing your appointments today.</p>
                 </div>
             </div>
+            <div class="carousel-item c-item">
+                <img src="./assets/images/7.jpg" class="d-block w-100 c-img img-4" alt="fourth">
+                <div class="carousel-caption ">
+                    <h5 class="caption">Modern Dental Equipments</h5>
+                    <p>Call for placing your appointments today.</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="./assets/images/7.jpg" class="d-block w-100 c-img img-5" alt="fifth">
+                <div class="carousel-caption ">
+                    <h5 class="caption">Modern Dental Equipments</h5>
+                    <p>Call for placing your appointments today.</p>
+                </div>
+            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -89,12 +107,11 @@
         <!--About-->
         <section class="about">
             <div class="container">
-                <h2 class="mb-4">About Us</h2>
+                <h2 class="mb-4 text-center">About Us</h2>
                 <p class="aboutus"> Dr Rekha's Kammath Dental Clinic, located in the heart of the Thrissur City,
                     offers the best quality dental care to you at the most reasonable cost. <br><br>
                     The clinic is equipped with advanced technology including RVG (Dental Xray) and the doctors team
-                    specialized
-                    in their respective dental specialities with many years of experience thus
+                    specialized in their respective dental specialities with many years of experience thus
                     entitling our patients with the BEST DENTAL CARE. <br><br>
                 </p>
                 <blockquote class="blockquote">
@@ -102,9 +119,9 @@
                 </blockquote>
             </div>
         </section>
-        <section class="services">
+        <section class="services mb-5">
             <div class="container">
-                <h2 class="text-center mb-3">Our Services</h2>
+                <h2 class="text-center mb-5">Our Services</h2>
                 <div class="row">
                     <div class=" col-xl-4 col-lg-6">
                         <div class="card">
@@ -165,21 +182,68 @@
             </div>
         </section>
         <section class="doctors">
-            <div class="container">
+            <div class="container ">
                 <h2>Our Team</h2>
                 <p>Our team of dentists and dental assistants strive to improve the overall health of our
                     patients by focusing on preventing, diagnosing and treating conditions associated with your teeth
                     and
                     gums.</p>
-                <ol>
+                <!--ol>
                     <li><span class="doctor">Dr Rekha Mallaya</span><br>BDS Chief Dental Surgeon</li><br>
                     <li><span class="doctor">Dr Anil Krishna </span><br>MDS Oral and Maxillofacial Surgeon</li><br>
                     <li><span class="doctor">Dr Joan Mathew </span><br>MDS Endodontist</li><br>
                     <li><span class="doctor">Dr Sutham Nair </span><br>MDS Orthodontist</li>
-                </ol>
+                </ol-->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./assets/images/doc1.jpg" alt="Doctor 1" class="doc-img">
+                                    <h4 class="card-title">Dr Rekha Mallaya</h4>
+                                    <p class="card-text text-left">BDS Chief Dental Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./assets/images/doc2.jpg" alt="Doctor 2" class="doc-img">
+                                    <h4 class="card-title">Dr Anil Krishna</h4>
+                                    <p class="card-text text-left">MDS Oral and Maxillofacial Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./assets/images/doc1.jpg" alt="Doctor 3" class="doc-img">
+                                    <h4 class="card-title">Dr Joan Mathew</h4>
+                                    <p class="card-text text-left">MDS Endodontist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./assets/images/doc2.jpg" alt="Doctor 4" class="doc-img">
+                                    <h4 class="card-title">Dr Sutham Nair </h4>
+                                    <p class="card-text text-left">MDS Orthodontist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-nav-btns">
+                        <button class="swiper-button-next"></button>
+                        <button class="swiper-button-prev"></button>
+                    </div>
+                </div>
+
             </div>
         </section>
-        <section class="loc">
+        <section class="loc mb-4">
             <div class="container">
                 <h2 class="mb-4">Our Location</h2>
                 <div class="d-md-flex justify-content-between">
@@ -218,15 +282,15 @@
             </div-->
             <div class="footer-contact">
                 <h3>Contact Us</h3>
-                <p>Venus Complex, <br>MG Road,<br>West Fort,<br>Thrissur, 680004</p>
-                <p>Email: info@example.com</p>
+                <p>Kammath Dental Clinic,<br>Venus Complex, <br>MG Road, West Fort,<br>Thrissur, 680004</p><br>
+                <p>Email: info@example.com</p><br>
                 <p onclick="">Phone: +91 9249881688</p>
             </div>
             <div class="footer-links">
                 <h3>Working Hours</h3>
-                <p> Monday to Saturday: <br> 9 am to 7 pm <br>
+                <p> Monday to Saturday: <br> 9 am to 7 pm <br><br>
                     Sunday<br>(Appointments only): <br> 9 am to 1 pm <br></p>
-                <p></p>Call and Confirm your Appointment time</p>
+                <p>Call and Confirm your Appointment time</p>
                 <!--ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Features</a></li>
@@ -236,6 +300,7 @@
             </div>
         </div>
         <div class="footer-social">
+            <br>
             <h3>Follow Us</h3>
             <ul>
                 <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -248,5 +313,38 @@
     <!--PHP-->
 
 </body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+            // when window width is >= 320px
+            550: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            }
+            // when window width is >= 480px
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        }
+    });
+</script>
 
 </html>
