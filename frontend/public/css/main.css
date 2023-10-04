@@ -11892,6 +11892,21 @@ textarea.form-control-lg {
 body {
   margin: auto;
   background-color: white;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 header .navbar {
