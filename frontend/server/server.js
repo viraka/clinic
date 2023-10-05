@@ -27,6 +27,8 @@ app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'contact.html'));
 });
 
+
+
 // Start the Express server
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);

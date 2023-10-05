@@ -194,7 +194,7 @@ section {
     box-shadow: 1px 1px 50px #fcc4a382;
     margin: 12px;
     padding: 12px;
-    min-height: 15rem;
+    min-height: 17rem;
     transition: all 0.3s;
 }
 
@@ -398,6 +398,34 @@ blockquote {
 }
 
 .swiper>* .card-title {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.docs>* .card {
+    border: none;
+    box-shadow: 1px 1px 20px rgba(252, 196, 163, 0.3);
+    margin: 10px;
+    padding: 12px;
+    min-height: 20rem;
+    max-width: 20rem;
+    transition: all 0.3s;
+}
+
+.docs>* .card:hover {
+    transform: translateY(-10px)
+}
+
+.docs>* .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.docs>* .card-title {
     font-size: 1rem;
     font-weight: bolder;
 }
