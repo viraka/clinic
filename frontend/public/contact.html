@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <!--a class="navbar-brand" href="#"></a-->
-                <img class="navbar-brand img" src="./assets/images/logo3.png" alt="logo" height="65">
+                <img class="navbar-brand img" src="./assets/images/logoreal.png" alt="logo" height="75">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
         <section>
             <!--Contact-->
             <h2>Reach Out To Us</h2>
-            <form action="#"><!--form action="contact.php" method="POST"-->
+            <form id="contact-form"><!--form action="contact.php" method="POST"-->
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
                     <input type="name" class="form-control" id="name" name="name" aria-describedby="nameHelp" required>
@@ -52,6 +52,13 @@
                     <input type="text" inputmode="numeric" pattern="[0-9]{10}" class="form-control" id="phone"
                         name="phone" aria-describedby="phoneHelp" required>
                     <div id="phoneHelp" class="form-text">We'll never share your phone number with anyone else.</div>
+                </div>
+                <!--email-->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" inputmode="email" class="form-control" id="email" name="email"
+                        aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>

@@ -4,21 +4,28 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "build": "browserify ./src/app.js -o ./public/js/bundle.js",
-    "watch": "watchify ./src/app.js -o ./public/js/bundle.js"
+    "build": "browserify ./src/app.js -o ./public/js/bundle.js --plugin [esmify]",
+    "watch": "watchify ./src/app.js -o ./public/js/bundle.js --plugin [esmify]"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.5.1",
     "bootstrap": "^5.3.2",
     "browserify": "^17.0.0",
+    "core-js": "^3.33.0",
     "express": "^4.18.2",
+    "nodemailer": "^6.9.5",
     "tsify": "^5.0.4",
     "typescript": "^5.2.2",
     "watchify": "^4.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "esmify": "^2.1.1",
     "nodemon": "^3.0.1"
   }
 }

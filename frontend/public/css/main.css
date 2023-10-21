@@ -11893,6 +11893,9 @@ body {
   margin: auto;
   background-color: white;
   overflow: overlay;
+  --gradient: linear-gradient(45deg, #7d0204, #d23e0e);
+  --gradient-2: linear-gradient(45deg, #d23e0e, #ff810c);
+  --new-gradient: linear-gradient(45deg, #ff6d12, #ff9500);
 }
 
 ::-webkit-scrollbar-track {
@@ -11962,6 +11965,14 @@ section {
   font-weight: 400;
 }
 
+ul.a {
+  list-style-type: disc;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
 .aboutus {
   padding: 20px;
   font-family: "Roboto", sans-serif;
@@ -12018,7 +12029,7 @@ section {
 .btn.ap1 {
   border-radius: 25px;
   border: none;
-  background-image: linear-gradient(45deg, #7d0204, #d23e0e);
+  background-image: var(--gradient-2);
   margin-left: 25px;
   padding: 10px 20px;
   font-size: 1rem;
@@ -12062,7 +12073,7 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #7d0204, #d23e0e);
+  background: var(--new-gradient);
   border-radius: var(--mo-card-border-radius);
   z-index: -1;
   transition: transform 0.3s;
@@ -12272,7 +12283,7 @@ blockquote {
 footer {
   color: beige;
   background-color: #7d0204;
-  background-image: linear-gradient(45deg, #7d0204, #d23e0e);
+  background-image: var(--new-gradient);
   padding: 30px 0;
   bottom: 0px;
 }
