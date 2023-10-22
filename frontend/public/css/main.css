@@ -12008,7 +12008,9 @@ ul.b {
 }
 
 .img-4 {
-  object-position: 50% 50%;
+  position: inherit;
+  transform: scale(1);
+  object-position: 20% 50%;
 }
 
 .img-5 {
