@@ -12367,6 +12367,17 @@ footer {
   font-size: 24px;
 }
 
+.footer-copyright {
+  margin-top: 20px;
+  text-align: center;
+  /* Center the content horizontally */
+  font-weight: 600;
+  /* Set the font weight to 600 (bold) */
+}
+.footer-copyright p {
+  margin: 5px 0;
+}
+
 /* Font Awesome Icons */
 .fa-facebook,
 .fa-twitter,
